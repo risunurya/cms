@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+
+    <head th:replace="fragments/header :: header">
+
+        <meta charset="ISO-8859-1">
+
+    <body>
+
+
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <b>CMS</b>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-th-large"></i>
+                            Dashboard
+                        </a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li><a href="#">Dashboard v.1</a></li>
+                            <li><a href="#">Dashboard v.2</a></li>
+                            <li><a href="#">Dashboard v.3</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-diamond"></i>
+                            Layouts
+                        </a>
+                    </li>
+                    <li>
+
+                        <a href="#graphSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-stats"></i>
+                            Graphs
+                        </a>
+                        <ul class="collapse list-unstyled" id="graphSubmenu">
+                            <li><a href="#">Flot Charts</a></li>
+                            <li><a href="#">Morris.js Charts</a></li>
+                            <li><a href="#">Rishsaw Charts </a></li>
+                            <li><a href="#">Chart.js</a></li>
+                            <li><a href="#">Chartist</a></li>
+                            <li><a href="#">C3 charts</a></li>
+                            <li><a href="#">Peity Charts</a></li>
+                            <li><a href="#">Sparkline Charts</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-envelope"></i>
+                            Mailbox
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class=""></i>
+                            Metrics
+                        </a>
+                    </li>
+                    <li>
+
+                        <a href="#formSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class=""></i>
+                            Forms
+                        </a>
+                        <ul class="collapse list-unstyled" id="formSubmenu">
+                            <li><a href="#">Basic Forms</a></li>
+                            <li><a href="#">Advanced Plugin</a></li>
+                            <li><a href="#">Wizard 3</a></li>
+                            <li><a href="#">File Upload</a></li>
+                            <li><a href="#">Text Editor</a></li>
+                            <li><a href="#">Autocomplete</a></li>
+                            <li><a href="#">Markdown</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class=""></i>
+                            App Views
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-duplicate"></i>
+                            Other pages
+                        </a>                  
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="#">Search results</a></li>
+                            <li><a href="#">Lockscreen</a></li>
+                            <li><a href="#">Invoice</a></li>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Login v.2</a></li>
+                            <li><a href="#">Forget password</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">404 Page</a></li>
+                            <li><a href="#">500 Page</a></li>
+                            <li><a href="#">Empty page</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-globe"></i>
+                            Miscellenous
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#uiSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-duplicate"></i>
+                            UI Elements
+                        </a>                  
+                        <ul class="collapse list-unstyled" id="uiSubmenu">
+                            <li><a href="#">Typography</a></li>
+                            <li><a href="#">Icons</a></li>
+                            <li><a href="#">Draggable Panels</a></li>
+                            <li><a href="#">Resizeable Panels</a></li>
+                            <li><a href="#">Buttons</a></li>
+                            <li><a href="#">Video</a></li>
+                            <li><a href="#">Panels</a></li>
+                            <li><a href="#">Tabs</a></li>
+                            <li><a href="#">Notification & Tooltips</a></li>
+                            <li><a href="#">Helper css classes</a></li>
+                            <li><a href="#">Badges, Labels, Progress</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-globe"></i>
+                            Grid options
+                        </a>
+                    </li>
+
+
+
+                </ul>
+
+
+            </nav>
+            <div id="content">
+
+                <div class="navbar-header">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                        <i class="glyphicon glyphicon-align-justify"></i>
+                    </button>
+                </div>                
+            </div>
+
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('#sidebarCollapse').on('click', function () {
+                        $('#sidebar').toggleClass('active');
+                    });
+                });
+            </script>
+
+
+
+
+    </body>
+</html>
